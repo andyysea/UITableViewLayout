@@ -9,6 +9,7 @@
 #import "YHViewController.h"
 #import "YHSectionModel.h"
 #import "YHCellModel.h"
+#import "YHTableViewHeaderView.h"
 
 static NSString *cellId = @"cellId";
 static NSString *headerId = @"headerId";
@@ -42,19 +43,23 @@ static NSString *headerId = @"headerId";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
-    YHSectionModel *sectionModel = self.dataList[indexPath.row];
+    YHSectionModel *sectionModel = self.dataList[indexPath.section];
     YHCellModel *cellModel = sectionModel.cellModels[indexPath.row];
     cell.textLabel.text = cellModel.title;
     return cell;
 }
 
+/** 自定义组头视图 */
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UITableViewHeaderFooterView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerId];
+    YHTableViewHeaderView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerId];
     
     YHSectionModel *secitonModel = self.dataList[section];
-#warning 这里需要自定义组头视图;
     
-    view.contentView.backgroundColor = [UIColor redColor];
+    view.model = secitonModel;
+    view.YHTableViewHeaderViewExpandCallBack = ^(){
+        [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
+    };
+    
     return view;
 }
 
@@ -79,7 +84,7 @@ static NSString *headerId = @"headerId";
     tableView.delegate = self;
     
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
-    [tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headerId];
+    [tableView registerClass:[YHTableViewHeaderView class] forHeaderFooterViewReuseIdentifier:headerId];
 }
 
 

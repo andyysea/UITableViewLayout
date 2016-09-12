@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class YHSectionModel;
 
 @interface YHTableViewHeaderView : UITableViewHeaderFooterView
 
+@property (nonatomic, strong) YHSectionModel *model;
 
-
+@property (nonatomic, copy) void (^YHTableViewHeaderViewExpandCallBack)();
 
 @end

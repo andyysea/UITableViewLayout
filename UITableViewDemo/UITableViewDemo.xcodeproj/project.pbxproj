@@ -7,25 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3B1BBE1D86458800046E0F /* YHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B1BBD1D86458800046E0F /* YHViewController.m */; };
+		EA3B1BC21D8649E400046E0F /* YHTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B1BC11D8649E400046E0F /* YHTableViewHeaderView.m */; };
 		EAEA50301D85B85C000988C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA502F1D85B85C000988C7 /* main.m */; };
 		EAEA50331D85B85C000988C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA50321D85B85C000988C7 /* AppDelegate.m */; };
-		EAEA50361D85B85C000988C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA50351D85B85C000988C7 /* ViewController.m */; };
 		EAEA50391D85B85C000988C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEA50371D85B85C000988C7 /* Main.storyboard */; };
 		EAEA503B1D85B85C000988C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEA503A1D85B85C000988C7 /* Assets.xcassets */; };
 		EAEA503E1D85B85C000988C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEA503C1D85B85C000988C7 /* LaunchScreen.storyboard */; };
+		EAEA504C1D85BA00000988C7 /* YHSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA504B1D85BA00000988C7 /* YHSectionModel.m */; };
+		EAEA504F1D85BA1A000988C7 /* YHCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA504E1D85BA1A000988C7 /* YHCellModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA3B1BBC1D86458800046E0F /* YHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHViewController.h; sourceTree = "<group>"; };
+		EA3B1BBD1D86458800046E0F /* YHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHViewController.m; sourceTree = "<group>"; };
+		EA3B1BC01D8649E400046E0F /* YHTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTableViewHeaderView.h; sourceTree = "<group>"; };
+		EA3B1BC11D8649E400046E0F /* YHTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTableViewHeaderView.m; sourceTree = "<group>"; };
 		EAEA502B1D85B85C000988C7 /* UITableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEA502F1D85B85C000988C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAEA50311D85B85C000988C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAEA50321D85B85C000988C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EAEA50341D85B85C000988C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EAEA50351D85B85C000988C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EAEA50381D85B85C000988C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAEA503A1D85B85C000988C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAEA503D1D85B85C000988C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAEA503F1D85B85C000988C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAEA504A1D85BA00000988C7 /* YHSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHSectionModel.h; sourceTree = "<group>"; };
+		EAEA504B1D85BA00000988C7 /* YHSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHSectionModel.m; sourceTree = "<group>"; };
+		EAEA504D1D85BA1A000988C7 /* YHCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCellModel.h; sourceTree = "<group>"; };
+		EAEA504E1D85BA1A000988C7 /* YHCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHCellModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +48,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA3B1BBB1D86457800046E0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA3B1BBC1D86458800046E0F /* YHViewController.h */,
+				EA3B1BBD1D86458800046E0F /* YHViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EA3B1BBF1D86499F00046E0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA3B1BC01D8649E400046E0F /* YHTableViewHeaderView.h */,
+				EA3B1BC11D8649E400046E0F /* YHTableViewHeaderView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		EAEA50221D85B85C000988C7 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +87,9 @@
 			children = (
 				EAEA50311D85B85C000988C7 /* AppDelegate.h */,
 				EAEA50321D85B85C000988C7 /* AppDelegate.m */,
-				EAEA50341D85B85C000988C7 /* ViewController.h */,
-				EAEA50351D85B85C000988C7 /* ViewController.m */,
+				EA3B1BBB1D86457800046E0F /* Controller */,
+				EA3B1BBF1D86499F00046E0F /* View */,
+				EAEA50491D85B9CD000988C7 /* Model */,
 				EAEA50371D85B85C000988C7 /* Main.storyboard */,
 				EAEA503A1D85B85C000988C7 /* Assets.xcassets */,
 				EAEA503C1D85B85C000988C7 /* LaunchScreen.storyboard */,
@@ -77,6 +105,17 @@
 				EAEA502F1D85B85C000988C7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAEA50491D85B9CD000988C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAEA504A1D85BA00000988C7 /* YHSectionModel.h */,
+				EAEA504B1D85BA00000988C7 /* YHSectionModel.m */,
+				EAEA504D1D85BA1A000988C7 /* YHCellModel.h */,
+				EAEA504E1D85BA1A000988C7 /* YHCellModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAEA50361D85B85C000988C7 /* ViewController.m in Sources */,
+				EA3B1BBE1D86458800046E0F /* YHViewController.m in Sources */,
 				EAEA50331D85B85C000988C7 /* AppDelegate.m in Sources */,
+				EA3B1BC21D8649E400046E0F /* YHTableViewHeaderView.m in Sources */,
+				EAEA504C1D85BA00000988C7 /* YHSectionModel.m in Sources */,
 				EAEA50301D85B85C000988C7 /* main.m in Sources */,
+				EAEA504F1D85BA1A000988C7 /* YHCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +343,7 @@
 				EAEA50441D85B85C000988C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

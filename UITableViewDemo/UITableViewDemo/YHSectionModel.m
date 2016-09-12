@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  YHSectionModel.m
 //  UITableViewDemo
 //
 //  Created by 杨应海 on 16/9/12.
 //  Copyright © 2016年 YYH. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YHSectionModel.h"
 
-@interface ViewController : UIViewController
-
+@implementation YHSectionModel
 
 @end
-

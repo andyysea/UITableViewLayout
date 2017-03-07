@@ -28,7 +28,7 @@ static NSString *headerId = @"headerId";
     
     [self setupUI];
     
-    NSLog(@"%@", self.dataList.description);
+    NSLog(@"%zd", [UIApplication sharedApplication].windows.count);
 }
 
 #pragma mark - UITableViewDataSource
@@ -76,6 +76,7 @@ static NSString *headerId = @"headerId";
 
 #pragma mark - 设置界面
 - (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.view addSubview:tableView];

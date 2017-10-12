@@ -46,7 +46,10 @@ static NSString *headerId = @"headerId";
     YHSectionModel *sectionModel = self.dataList[indexPath.section];
     YHCellModel *cellModel = sectionModel.cellModels[indexPath.row];
     cell.textLabel.text = cellModel.title;
+    NSLog(@"indexPath-->%@",indexPath);
+    
     return cell;
+    
 }
 
 /** 自定义组头视图 */
@@ -57,9 +60,11 @@ static NSString *headerId = @"headerId";
     
     view.model = secitonModel;
     view.YHTableViewHeaderViewExpandCallBack = ^(){
-        [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
+//        [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView reloadData];
     };
-    
+    NSLog(@"section ---> %@",@(section).description);
+
     return view;
 }
 

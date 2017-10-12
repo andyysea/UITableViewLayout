@@ -14,6 +14,9 @@
 @property (nonatomic, weak) UIImageView *arrowImageView;
 @property (nonatomic, weak) UILabel *titleLabel;
 
+/** 控制避免重复点击 */
+@property (nonatomic, assign) BOOL IsOk;
+
 @end
 
 @implementation YHTableViewHeaderView
@@ -21,6 +24,9 @@
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithReuseIdentifier:reuseIdentifier];
     if (self) {
+        
+        self.IsOk = YES;
+        
         self.contentView.backgroundColor = [UIColor purpleColor];
         CGFloat width = [UIScreen mainScreen].bounds.size.width;
         
@@ -57,6 +63,11 @@
 #pragma mark 按钮的监听方法
 - (void)onExpand:(UIButton *)button {
     
+    if (!self.IsOk) {
+        return;
+    }
+    self.IsOk = NO;
+    
     self.model.isExpanded = !self.model.isExpanded;
     
     [UIView animateWithDuration:0.25 animations:^{
@@ -65,11 +76,13 @@
         } else {
             self.arrowImageView.transform = CGAffineTransformMakeRotation(M_PI);
         }
+    } completion:^(BOOL finished) {
+        if (self.YHTableViewHeaderViewExpandCallBack) {
+            self.YHTableViewHeaderViewExpandCallBack();
+        }
+        self.IsOk = YES;
     }];
     
-    if (self.YHTableViewHeaderViewExpandCallBack) {
-        self.YHTableViewHeaderViewExpandCallBack();
-    }
 }
 
 
